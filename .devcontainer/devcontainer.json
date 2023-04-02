@@ -13,8 +13,8 @@
 			"vncPort": "5901"
 		},
 		"ghcr.io/devcontainers/features/java:1": {
-			"version": "20.fx",
-			"jdkDistro": "zuku"
+			"version": "19.0.2.fx-zulu",
+			"jdkDistro": "zulu"
 		}
 	},
 
