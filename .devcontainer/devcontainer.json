@@ -31,6 +31,13 @@
 	// Configure tool-specific properties.
 	// "customizations": {},
 
+	// Open simple-browser to the container's forward port.
+	"portsAttributes": {
+		"6080": {
+			"onAutoForward": "openPreview"
+		}
+	},
+	
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	"remoteUser": "root",
 	"customizations": {
@@ -40,7 +47,7 @@
 			],
 			"settings": { 
 				// Set the Java server launch mode to Standard
-				"java.server.launchMode": "Standard" 
+				"java.server.launchMode": "Standard"
 			}
 		}
 	}
