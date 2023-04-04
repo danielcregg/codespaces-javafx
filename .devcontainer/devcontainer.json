@@ -8,7 +8,7 @@
 		"ghcr.io/devcontainers/features/desktop-lite:1": {
 			"version": "latest",
 			"noVncVersion": "1.2.0",
-			"password": "",
+			"password": "codespaces",
 			"webPort": "6080",
 			"vncPort": "5901"
 		},
