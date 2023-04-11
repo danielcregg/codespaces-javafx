@@ -1,19 +1,17 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	// Reference Dockerfile from parent folder
-	"build": { "dockerfile": "Dockerfile" },
-	//"name": "Ubuntu",
+	"name": "Ubuntu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	//"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"features": {
-	// 	"ghcr.io/devcontainers/features/desktop-lite:1": {
-	// 		"version": "latest",
-	// 		"noVncVersion": "1.2.0",
-	// 		"password": "codespaces",
-	// 		"webPort": "6080",
-	// 		"vncPort": "5901"
-	// 	},
+	 	"ghcr.io/devcontainers/features/desktop-lite:1": {
+	 		"version": "latest",
+	 		"noVncVersion": "1.2.0",
+			"password": "codespaces",
+	 		"webPort": "6080",
+	 		"vncPort": "5901"
+	 	},
 		"ghcr.io/devcontainers/features/java:1": {
 			"version": "19.0.2.fx-zulu",
 			"jdkDistro": "zulu"
