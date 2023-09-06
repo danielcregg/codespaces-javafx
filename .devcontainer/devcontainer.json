@@ -19,7 +19,7 @@
 		}
 	},
 	// Forward port for desktop-lite
-    "forwardPorts": [6080],
+    	"forwardPorts": [6080],
 	"portsAttributes": {
 		"6080": {
 			"label": "desktop",
