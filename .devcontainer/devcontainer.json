@@ -4,6 +4,7 @@
 	"name": "Ubuntu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 	 	"ghcr.io/devcontainers/features/desktop-lite:1": {
 	 		"version": "latest",
@@ -17,28 +18,21 @@
 			"jdkDistro": "zulu"
 		}
 	},
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// Forward port for desktop-lite
-    "forwardPorts": [
-        6081 // VNC client
-    ],
+    "forwardPorts": [6080],
+	"portsAttributes": {
+		"6080": {
+			"label": "desktop",
+			// Open simple-browser to the container's forward port.
+			"onAutoForward": "openPreview"
+		}
+	},
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
 
-	// Open simple-browser to the container's forward port.
-	"portsAttributes": {
-		"6080": {
-			"onAutoForward": "openPreview"
-		}
-	},
-	
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	"remoteUser": "root",
 	"customizations": {
